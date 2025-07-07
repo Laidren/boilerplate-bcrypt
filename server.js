@@ -14,7 +14,16 @@ const someOtherPlaintextPassword = 'pass123';
 
 //START_ASYNC -do not remove notes, place code between correct pair of notes.
 
-//THIS IS NOT WORKING??
+bcrypt.hash('hello_world', 13, (err, hash) => {
+    console.log(hash);
+
+    bcrypt.compare('hello_myLIFE', hash, (err, res) => {
+        console.log(res)
+    })
+})
+
+
+
 
 //END_ASYNC
 
