@@ -17,7 +17,7 @@ const someOtherPlaintextPassword = 'pass123';
 bcrypt.hash('hello_world', 13, (err, hash) => {
     console.log(hash);
 
-    bcrypt.compare('hello_myLIFE', hash, (err, res) => {
+    bcrypt.compare('hello_world', hash, (err, res) => {
         console.log(res)
     })
 })
